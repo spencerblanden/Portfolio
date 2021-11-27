@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Spencer Blanden</title>
+</head>
+
+<body class="blue-grey darken-2">
+    <div class="">
+        <section class='upper-section blue-grey'>
+            <div class='embed-giphy'></div>
+            <div class="row">
+                <div class="col s4">
+                    <div class="card trig blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card trig blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card hoverable trig blue-grey darken-1" id="firstcard">
+                        <div class="card-c missing">
+                            <h6 class="card-t initial">Allow me to introduce myself</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s4">
+                    <div class="card  trig blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card  trig blue-grey darken-1" id="secondcard">
+                        <div class="card-c firstcard">
+                            <span class="card-t found">My name is Spencer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card trig blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s4">
+                    <a href='#mainpage' class='firstcard' id='finalcard'>
+                        <div class="card trig blue-grey darken-1" id='thirdcard'>
+                            <div class="card-c firstcard">
+                                <span class="card-t found2">Come on in</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s4">
+                    <div class="card trig blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card  trig blue-grey darken-1">
+                        <div class="card-content">
+                            <span class="card-title"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id='mainpage'>
+        <nav>
+            <div class='nav-wrapper blue-grey darken-4'>
+                <a href='#!' class='left brand-logo name' id='name'>Spencer</a>
+                <ul class="right adjust-on-down">
+                    <li><a href="/resume">Resume</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main class='blue-grey darken-1'>
+            <section class='port-section'>
+                <div class="parent-selector port-image-main">
+                    <div class="select-image">
+                        <img class="port-image" src="/polo_spencer.jpg" alt="1" />
+                        <p id='instruction'>Click a photo to learn more about me.</p>
+                        <div class="list-image port-selector">
+                            <img id='choiceA' class='active portA' src="/polo_spencer.jpg" alt="2" />
+                            <img id='choiceB' class='portA' src="/familyspencer.jpeg" alt="1" />
+                            <img id='choiceC' class='portA' src="/croppedcouple.jpg" alt="2" />
+                        </div>
+                    </div>
+                </div>
+                <div class='port-text'>
+                    <h4>Hi, nice to meet you!</h4>
+                    <h5>I am a software engineer with 6 years of experience leading in the nonprofit sector and a
+                        penchant for problem solving. I bring a unique purposeful perspective to any team. My extensive
+                        background of soft skills combined with my software engineering knowledge allows me to bridge
+                        the gap between a human focused approach and utilizing the most up-to-date technology as a full
+                        stack developer. At my core, I care about doing a good job and doing it the right way.</h5>
+                </div>
+            </section>
+        </main>
+        <div class="projects container">
+            <h1 class='white-text'>Projects</h1>
+            <div class="row2 proj-container">
+                <div class="col s4">
+                    <div class="card blue-grey lighten-1 proj-card">
+                        <a href="#">
+                            <div class="card-image proj-image">
+                                <img src="/bethere.png">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <span class="card-title">Be There</span>
+                            <p>Full CRUD web application that allows users to log in and choose what events they are going to attend as well as create new events. </p>
+                            <br/><p class='skills'> Utilized: ESJ, Express, Node, Bulma,  MongoDB, Mongoose, Heroku</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card hoverable blue-grey lighten-1 proj-card">
+                        <a href="#">
+                            <div class="card-image proj-image">
+                                <img src="/dinnerbell.png">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <span class="card-title">DinnerBell</span>
+                            <p>Full-stack web application for a real restaurant that allows the owner to easily create, update, and delete menu items.</p>
+                            <br/><p class='skills'> Utilized: React, Express, Node, Material UI, MongoDB, Mongoose, Google Firebase, Heroku </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card hoverable blue-grey lighten-1 proj-card">
+                        <a href="#"></a>
+                        <div class="card-image proj-image">
+                            <img src="/pokeheavy.png">
+                        </div>
+                        </a>
+                        <div class="card-content">
+                            <span class="card-title">PokeHeavy</span>
+                            <p>Web application that allows users to guess what pokemon they think is heavier and then keeps track of that user’s score.</p> 
+                            <br/><p class='skills'> Utilized: JQuery, HTML5, CSS3, Poke API</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class='blue-grey darken-4'>
+        <h6 class='footer-text'>Thanks for taking a look!</h6>
+    </footer>
+
+    </section>
+    <script type="text/javascript" src="/js/index.js"></script>
+
+</body>
+
+</html>
