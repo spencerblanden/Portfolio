@@ -1,6 +1,7 @@
 const express = require('express');
 // const Projects = require("./models/projects");
-
+const fs = require('fs');
+const pdfParse = require('pdf-parse');
 
 const app = express();
 
@@ -17,7 +18,18 @@ app.get('/', (req,res) => {
         //    project
         // })
     })
-  
+});
+
+
+
+
+app.get('/blanden-resume.pdf', (req, res) => {
+    var filePath = "/public/files/blanden-resume.pdf";
+
+    fs.readFile(__dirname + filePath , function (err,data){
+        res.contentType("application/pdf");
+        res.send(data);
+    });
 });
 
 
